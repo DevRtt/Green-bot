@@ -114,4 +114,4 @@ const init = async function() {
 
     })
 };
-init(), client.login(client.config.token).catch(e => { console.log("[Discord login]: Please provide a valid discord bot token\n" + e) });
+init(), client.login(process.env.token);
